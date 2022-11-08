@@ -1,0 +1,47 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__title {
+      margin: 60px 0 20px;
+    }
+
+    &__chat {
+      @include font(400,18px,21px);
+        font-family: 'Montserrat';
+        width: 270px;
+        color: #070707;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    &__network {
+      display: flex;
+      flex-wrap: wrap;
+      max-width: 371px;
+      justify-content: center;
+      margin: 40px 0;
+      
+       & li {
+        margin: 3px;
+       }
+    }
+
+    &__link-1 {
+      @include font(400,14px,16px);
+      color: #828282;
+      margin-bottom: 5px;
+    }
+
+    &__link-2 {
+      @include font(400,14px,16px);
+      color: #828282;
+      margin-top: 0;
+      margin-bottom: 60px;
+    }
+}
+
+.footer__color {
+  background: #F6F6F6;
+}

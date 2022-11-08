@@ -1,0 +1,355 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital@1&family=Montserrat:wght@200;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+  <body>
+
+    <header class="header container">
+      <a href="index.html" class="header__home">Home</a>
+      <nav>
+          <ul class="undotted header__list">
+              <li>
+                 <a href="My blog.html">My blog</a>
+              </li>
+              <li>
+                  <a href="#" class="sign__link_js">Sign in</a>
+              </li>
+              <li>
+                  <a href="#" class="register__link_js">Register</a>
+              </li>
+              <!-- <li>
+                <a href="1.html">1</a>
+            </li>
+            <li>
+              <a href="My profile.html">My profile</a>
+            </li> -->
+          </ul>
+      </nav>
+    </header>
+
+    <header class="mobile-header container">
+      <div class="mobile-header__wrapper">
+        <a href="index.html" class="mobile-header__home">Home</a>
+        <nav>
+            <ul class="undotted mobile-header__list">
+                <li>
+                  <a href="My blog.html">My blog</a>
+              </li>
+              <li>
+                  <a href="#" class="sign__link_js">Sign in</a>
+              </li>
+              <li>
+                  <a href="#" class="register__link_js">Register</a>
+              </li>
+              <!-- <li>
+                <a href="1.html">1</a>
+              </li>
+              <li>
+                <a href="My profile.html">My profile</a>
+              </li> -->
+            </ul>
+        </nav>
+      </div>
+      
+      <div class="mobile-header__close">
+        <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect x="3.37256" width="32" height="4" rx="2" transform="rotate(45 3.37256 0)" fill="#070707"/>
+          <rect x="0.543945" y="22.6289" width="32" height="4" rx="2" transform="rotate(-45 0.543945 22.6289)" fill="#070707"/>
+        </svg>          
+      </div>
+    </header>
+
+    <main>
+      <section class="container banner">
+        <div class="banner__name">
+          <h1>Pavel Pavelovich</h1>
+          <p class="banner__name_text">Future front-end developer 36 years old, Tolyatti</p>
+          <div class="humburger">
+            <svg width="32" height="20" viewBox="0 0 32 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect y="6.10352e-05" width="32" height="4" rx="2" fill="#070707"/>
+              <rect y="8.00006" width="32" height="4" rx="2" fill="#070707"/>
+              <rect y="16.0001" width="32" height="4" rx="2" fill="#070707"/>
+            </svg>          
+          </div>
+        </div>
+
+        <!-- <div class="container">
+            <div class="slider__container">
+              <div class="slider__track">
+                <img class="slider__item" src="./img/foto1.jpg" alt="">
+                <img class="slider__item" src="./img/foto2.jpg" alt="">
+                <img class="slider__item" src="./img/foto3.jpg" alt="">
+              </div>
+            </div>
+            <div class="slider__buttons">
+              <button class="btn__prev"></button>
+              <ul class="undotted pagination">
+                <li>
+                    <button class="page__link_checked"></button>
+                </li>
+                <li>
+                    <button class="page__link"></button>
+                </li>
+                <li>
+                    <button class="page__link"></button>
+              </li>
+                <li>
+                    <button class="page__link"></button>
+                </li>
+            </ul>
+              <button class="btn__next"></button>
+            </div>
+          </div> -->
+
+          <div>
+            <!-- Slider main container -->
+            <div class="swiper mySwiper">
+              <!-- Additional required wrapper -->
+              <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide"><img src="./img/foto1.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="./img/foto2.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="./img/foto3.jpg" alt=""></div>
+                <!-- ... -->
+              </div>
+              </div>
+              <div class="pagination">
+                <div class="swiper-button-prev btn__prev"></div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-next btn__next"></div>
+              </div>
+            <div class="swiper-scrollbar"></div>
+          </div>
+          <!-- <picture>
+            <source srcset="img/banner-foto-mobile.jpg, img/banner-foto-mobile2x.jpg" media="(max-width: 500px">
+            <source srcset="img/banner-foto-tablet.jpg, img/banner-foto-tablet2x.jpg" media="(max-width: 999px">
+            <source srcset="img/banner-foto.jpg, img/banner-foto2x.jpg 2x">
+            <img class="banner__foto" src="./img/banner-foto.jpg, banner-foto2x.jpg" alt="">
+          </picture> -->
+      </section>
+
+      <section class="about">
+        <div class="container about__list">
+          <h2>About me</h2>
+          <div class="about__link">
+              <p>Aliquam tortor molestie turpis est tristique. Congue diam orci amet quis semper ut. Vitae aenean nibh facilisis urna, ultricies euismod nunc. Commodo fringilla sit hendrerit consequat. Vel ac elit vel sagittis.</p>
+              <p>Tincidunt id quis pellentesque rutrum pretium. Egestas aliquam dictum ipsum nisl, sed pulvinar. Commodo elit sed a fermentum non justo. Etiam platea consectetur.</p>
+              <p>Quam ipsum odio tellus etiam aliquam dolor ut hendrerit. Felis risus nec vitae nunc ultricies placerat. Nullam nec felis eu id dolor pellentesque tristique. </p>
+            </div>
+        </div>
+      </section>
+
+      <section class="container skill">
+        <h2 class="skill__title">Skills</h2>
+        <p>I work in such programs as</p>
+        <div class="skill__link">
+          <ul class="undotted programs">
+              <li>
+                <picture>
+                  <source srcset="img/HTML5-mobile.png, img/HTML5-mobile2x.png" media="(max-width: 500px">
+                  <source srcset="img/HTML5-tablet.png, img/HTML5-tablet2x.png" media="(max-width: 999px">
+                  <source srcset="img/HTML5.png, img/HTML52x.png 2x">
+                  <img src="./img/HTML5.png" alt="">
+                </picture>
+                
+              </li>
+              <li>
+                <picture>
+                  <source srcset="img/CSS-mobile.png, img/CSS-mobile2x.png" media="(max-width: 500px">
+                  <source srcset="img/CSS-tablet.png, img/CSS-tablet2x.png" media="(max-width: 999px">
+                  <source srcset="img/CSS.png, img/CSS2x.png 2x">
+                  <img src="./img/CSS.png, img/CSS2x.png" alt="">
+                </picture>
+              </li>
+              <li>
+                <picture>
+                  <source srcset="img/JavaScript-mobile.png, img/JavaScript-mobile2x.png" media="(max-width: 500px">
+                  <source srcset="img/JavaScript-tablet.png, img/JavaScript-tablet2x.png" media="(max-width: 999px">
+                  <source srcset="img/JavaScript.png, img/JavaScript2x.png 2x">
+                  <img src="./img/JavaScript.png, img/JavaScript2x.png" alt="">
+                </picture>
+              </li>
+              <li>
+                <picture>
+                  <source srcset="img/GitHub-mobile.png, img/GitHub-mobile2x.png" media="(max-width: 500px">
+                  <source srcset="img/GitHub-tablet.png, img/GitHub-tablet2x.png" media="(max-width: 999px">
+                  <source srcset="img/GitHub.png, img/GitHub2x.png 2x">
+                  <img src="./img/GitHub.png, img/GitHub2x.png" alt="">
+                </picture>
+              </li>
+              <li>
+                <picture>
+                  <source srcset="img/Figma-mobile.png, img/Figma-mobile2x.png" media="(max-width: 500px">
+                  <source srcset="img/Figma-tablet.png, img/Figma-tablet2x.png" media="(max-width: 999px">
+                  <source srcset="img/Figma.png, img/Figma2x.png 2x">
+                  <img src="./img/Figma.png, img/Figma2x.png" alt="">
+                </picture>
+              </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="portfolio">
+        <div class="portfolio__list">
+          <h2>Portfolio</h2>
+          <picture>
+            <source srcset="img/page-mobile.png, img/page-mobile2x.png" media="(max-width: 500px">
+            <source srcset="img/page-tablet.png, img/page-tablet2x.png" media="(max-width: 999px">
+            <source srcset="img/page.png, img/page2x.png 2x">
+            <img src="./img/page.png, img/page2x.png" alt="">
+          </picture>
+          <div class="portfolio__link">
+            <a href="#">Learning site for DL Academy courses</a>
+            <p>A simple multi-page static site. The design layout was in Figma. HTML and CSS were used. The site is responsive and cross-browser, but without adding interactivity via JavaScript.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    @@include('blocks/footer.html')
+
+    <section class="popup__section">
+      <div class="container popup__sign">
+        <form action="#" class="popup__sign__form" id="sign" name="sign">
+          <div class="label__wrapper">
+            <label for="emailsign">Email *</label>
+            <input type="email" id="emailsign" name="emailsign" data-reg="^[-\w.]+@([A-z0-9][-A-z0-9]+\.)+[A-z]{2,4}$">
+          </div>
+          <div class="label__wrapper">
+            <label for="passwordsign">Password *</label>
+            <input type="text" id="passwordsign" name="passwordsign" data-reg="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$">
+          </div>
+          <button tupe="submit" class="button-secondary" id="submitsign" name="submitsign">Log in</button>
+          <div class="popup__sign__close">
+            <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="2.82861" width="32" height="4" rx="2" transform="rotate(45 2.82861 0)" fill="#828282"/>
+              <rect y="22.6289" width="32" height="4" rx="2" transform="rotate(-45 0 22.6289)" fill="#828282"/>
+            </svg>       
+          </div>
+        </form>
+      </div>
+
+      <div class="container popup__register">
+        <form action="#" class="popup__register__form" id="register" name="register">
+          <div class="label__wrapper">
+            <label for="emailregister">Email *</label>
+            <input type="email" id="emailregister" name="emailregister" data-reg="^[-\w.]+@([A-z0-9][-A-z0-9]+\.)+[A-z]{2,4}$">
+          </div>
+          <div class="field-2-column">
+            <!-- <div class="label__wrapper">
+              <label for="input-Name">Name *</label>
+              <input type="text" id="input-Name" >
+            </div> -->
+            <div class="label__wrapper">
+              <label for="nameregister">Name *</label>
+              <input type="text" id="nameregister" name="nameregister" data-reg="^[a-zA-Z][a-zA-Z0-9-_\.]{1,20}$">
+            </div>
+            <div class="label__wrapper">
+              <label for="surnameregister">Surname *</label>
+              <input type="text" id="surnameregister" name="surnameregister" data-reg="^[a-zA-Z][a-zA-Z0-9-_\.]{1,20}$">
+            </div>
+          </div>
+          <div class="field-2-column">
+            <div class="label__wrapper">
+              <label for="passwordregister">Password *</label>
+              <input type="text" id="passwordregister" name="passwordregister" data-reg="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$">
+            </div>
+            <div class="label__wrapper">
+              <label for="repeatpasswordregister">Repeat password *</label>
+              <input type="text" id="repeatpasswordregister" name="repeatpasswordregister" data-reg="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$">
+            </div>
+          </div>
+          <div class="field-2-column">
+            <div class="label__wrapper">
+              <label for="locationregister">Location *</label>
+              <input type="text" id="locationregister" name="locationregister" data-reg="^[a-zA-Z][a-zA-Z0-9-_\.]{1,20}$">
+            </div>
+            <div class="label__wrapper">
+              <label for="age">Age *</label>
+              <input type="text" id="age" name="age" data-reg="^[1-9]+[0-9]*$">
+            </div>
+          </div>
+
+          <fieldset>
+            <input type="checkbox" id="input-clicking" class="checkbox_input">
+            <label for="input-clicking" class="checkbox_label">Clicking on the button, you consent to the processing of your personal data.</label>
+          </fieldset>
+
+          <button tupe="submit" class="button-secondary" id="submitregister" name="submitregister">Sign up</button>
+
+          <div class="popup__register__close">
+            <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="2.82861" width="32" height="4" rx="2" transform="rotate(45 2.82861 0)" fill="#828282"/>
+              <rect y="22.6289" width="32" height="4" rx="2" transform="rotate(-45 0 22.6289)" fill="#828282"/>
+            </svg>       
+          </div>
+        </form>
+      </div>
+
+      <div class="container popup__message">
+        <form action="#" class="popup__message__form" id="message" name="message">
+          <div class="field-2-column">
+            <div class="label__wrapper">
+              <label for="namemessage">What is your name? *</label>
+              <input type="text" id="namemessage" name="namemessage" data-reg="^[a-zA-Z][a-zA-Z0-9-_\.]{1,20}$">
+            </div>
+            <div class="label__wrapper">
+              <label for="namemessub">Message subject *</label>
+              <input type="text" id="namemessub" name="namemessub" data-reg="^[a-zA-Z][a-zA-Z0-9-_\.]{1,20}$">
+            </div>
+          </div>
+          <div class="field-2-column">
+            <div class="label__wrapper">
+              <label for="emailmes">Your Email *</label>
+              <input type="email" id="emailmes" name="emailmes" data-reg="^[-\w.]+@([A-z0-9][-A-z0-9]+\.)+[A-z]{2,4}$">
+            </div>
+            <div class="label__wrapper">
+              <label for="phone">Your mobile phone *</label>
+              <input type="text" id="phone" name="phone" data-reg="^(\+)?((\d{2,3}) ?\d|\d)(([ -]?\d)|( ?(\d{2,3}) ?)){5,12}\d$">
+            </div>
+          </div>
+          <div class="label__wrapper">
+            <label for="textarea">What do you want to discuss with me?</label>
+            <textarea required name="message" id="textarea" cols="600" rows="150"></textarea>
+          </div>
+
+          <fieldset>
+            <input type="checkbox" id="input-clicking_message" class="checkbox_input">
+            <label for="input-clicking_message" class="checkbox_label">Clicking on the button, you consent to the processing of your personal data.</label>
+          </fieldset>
+
+          <button tupe="submit" class="button-secondary" id="submitmessage" name="submitmessage">Send</button>
+
+          <div class="popup__message__close">
+            <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="2.82861" width="32" height="4" rx="2" transform="rotate(45 2.82861 0)" fill="#828282"/>
+              <rect y="22.6289" width="32" height="4" rx="2" transform="rotate(-45 0 22.6289)" fill="#828282"/>
+            </svg>       
+          </div>
+        </form>
+      </div>
+
+    </section>
+
+    <button class="button-to-top button-to-top_js">UP</button>
+
+    <script src="js/app.js"></script>
+  </body>
+</html>
