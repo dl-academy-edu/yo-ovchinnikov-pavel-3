@@ -1,0 +1,12 @@
+
+@mixin font ($font-weight: 400, $font-size: 18px, $line-height: 21px) {
+  font-weight: $font-weight;
+  font-size: $font-size;
+  line-height: $line-height;
+}
+
+%psevdo {
+  content: '';
+  display: block;
+  position: absolute;
+}
